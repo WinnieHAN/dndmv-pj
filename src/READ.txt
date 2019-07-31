@@ -1,0 +1,57 @@
+Estep:
+chCount = this.childCountForComp;
+chCount = this.childPy;
+
+this.iteration == 1 
+	c.stcsWithLengthLessThanTen -> allTrees
+this.iteration > 1
+	i = this.onlineStsSplit[this.onlineIdx][0]; i < this.onlineStsSplit[this.onlineIdx][1]; i++  -> allTrees
+stcsWithLengthLessThanTen -> allTreesForCount
+
+for training ===========>   allTrees
+
+
+
+DMV_Mstep:
+allTreesForCount -> childCountForComp
+childCountForComp -> childCountForCompList
+childCountForComp := 0
+childCountForComp <- childCountForCompList  (DMVaddPrior)(why Prior do not need in NN?)//NeuDMVaddPrior();//adding prior information need other extra steps. Should we add prior in total countTable?
+normPara(1)      (NN has no smoothing 1)
+
+allTrees -> childCountForComp1
+childCountForComp1 -> txtFile
+
+this.allTreesForCount.clear();
+this.allTrees.clear();
+this.allValidTrees.clear();
+
+onlineBatch = 100
+normPara = 1
+iteration = 57 : acc = 63.2
+
+onlineBatch = 500
+normPara = 1
+iteration = 12 : acc = 62.6
+
+onlineBatch = 500
+batchSize__NN = 10
+lr = 0.01
+normPara = 1
+iteration = 12 : acc = 66
+
+time = 13min
+onlineBatch = 500
+batchSize__NN = 100
+lr = 0.01
+normPara = 1
+iteration = 12 : acc = 69.5
+
+DEBUGE1 = 1
+DEBUGE2 = 0
+DEBUGE3 = 1
+iteration = 21 : acc = 67.8
+
+0port 1wordf 2onlineBatch 3accIdx 4corpusIdx stsLimitNum5
+23330  170 1000  0 0
+0port 1accIdx
