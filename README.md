@@ -17,11 +17,11 @@ WSJ
 
 ## Reference
 ```
-@inproceedings{jiang2019regularization,
-  title={A Regularization-based Framework for Bilingual Grammar Induction},
-  author={Jiang, Yong and Han, Wenjuan and Tu, Kewei},
-  booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
-  pages={1423--1428},
+@inproceedings{han2019enhancing,
+  title={Enhancing unsupervised generative dependency parser with contextual information},
+  author={Han, Wenjuan and Jiang, Yong and Tu, Kewei},
+  booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  pages={5315--5325},
   year={2019}
 }
 ```
@@ -34,7 +34,7 @@ repo:
 ```shell
 https://github.com/sustcsonglin/ndmv.git
 ```
-commit: ldnmdv  df0bee3eb500c29137444dc11f0a720652670c08
+commit: df0bee3eb500c29137444dc11f0a720652670c08    (ldnmdv)
 
 run:
 ```shell
